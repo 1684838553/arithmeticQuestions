@@ -49,7 +49,9 @@ function reversList(link) {
         linkList.push(link.value)
         link = link.next
     }
-
+    
+    if(!linkList.length) return null
+   
     // 数组倒序
     linkList.reverse()
 
