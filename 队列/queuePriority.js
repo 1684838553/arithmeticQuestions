@@ -1,3 +1,5 @@
+// 优先级队列
+
 function QueuePriority() {
   this.items = [];
 
