@@ -183,6 +183,38 @@ function BinarySearchTree() {
     }
 
     // 删除节点有两个子节点
+    else {
+      let succssor = this.getSuccssor(current);
+
+      if (this.root === current) {
+        this.root = succssor;
+      } else if (isLeftChild) {
+        parent.left = succssor;
+      } else {
+        parent.right = succssor;
+      }
+
+      succssor.left = current.left;
+    }
+  };
+
+  BinarySearchTree.prototype.getSuccssor = function (delNode) {
+    let succssor = delNode;
+    let current = delNode.right;
+    let succssorParant = delNode;
+
+    while (current) {
+      succssorParant = succssor;
+      succssor = current;
+      current = current.left;
+    }
+
+    if (succssor !== delNode.right) {
+      succssorParant.left = succssor.right;
+      succssor.right = delNode.right;
+    }
+
+    return succssor;
   };
 }
 
