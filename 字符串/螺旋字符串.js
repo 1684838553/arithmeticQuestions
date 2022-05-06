@@ -6,23 +6,20 @@
 再如：如果A=‘abcd’，B=‘abcd’，A切成‘abcd’和''（空串），换位后可以得到B，返回true。
 */
 
-
-
 /*
 解题思路：
 A+A 字符串中包含 B,返回true
 */
 
-
 /**
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
  * 旋转字符串
- * @param A string字符串 
- * @param B string字符串 
+ * @param A string字符串
+ * @param B string字符串
  * @return bool布尔型
  */
-export function solve(A: string, B: string): boolean {
-    // write code here
-    if(A.length !== B.length) return false
-    return (A+A).indexOf(B)>-1
+export function solve(A, B) {
+  // write code here
+  if (A.length !== B.length) return false;
+  return (A + A).indexOf(B) > -1;
 }
