@@ -57,3 +57,21 @@ function getNodeValArr(root, arr) {
   arr.push(root.val);
   getNodeValArr(root.right, arr);
 }
+
+// 判断一棵树是否是二叉搜索树
+function judgeIt(root) {
+  // write code here
+  // 判断是否是二叉搜索树
+  let arr = [];
+  getNodeValArr(root, arr);
+  let arr1 = JSON.parse(JSON.stringify(arr)).sort();
+  let isSreachTree;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== arr1[i]) {
+      isSreachTree = false;
+    }
+  }
+  isSreachTree = true;
+
+  return isSreachTree;
+}
