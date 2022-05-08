@@ -27,3 +27,26 @@ function dfs(root, arr, level) {
   dfs(root.left, arr, level + 1);
   dfs(root.right, arr, level + 1);
 }
+
+// 用队列实现层次遍历
+function PrintFromTopToBottom(root) {
+  // write code here
+  let result = [];
+  let queue = [];
+  if (!root) return result;
+
+  result.push(root.val);
+  queue.push(root);
+  while (queue.length) {
+    let node = queue.shift();
+    if (node.left) {
+      result.push(node.left.val);
+      queue.push(node.left);
+    }
+    if (node.right) {
+      result.push(node.right.val);
+      queue.push(node.right);
+    }
+  }
+  return result;
+}
