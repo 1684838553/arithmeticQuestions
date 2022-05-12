@@ -7,46 +7,54 @@
  * @param num int整型一维数组
  * @return int整型二维数组
  */
-function threeSum(num) {
-  // write code here
-  num.sort((a, b) => a - b);
-  let result = [];
-  let len = num.length;
-  if (len < 3) return result;
-  for (let i = 0; i < len; i++) {
-    if (num[i] > 0) return result;
-    if (i !== 0 && num[i] === num[i - 1]) {
-      continue;
-    }
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+var threeSum = function(nums) {
+    nums.sort((a,b)=>a-b)
+    let res = []
+    if(nums.length < 3) return res
 
-    let left = i + 1;
-    let right = len - 1;
+    for(let i = 0;i<nums.length;i++){
+        // nums[i] > 0 时，nums[l]和nums[r] 也大于0
+        if(nums[i] > 0) return res
 
-    while (left < right) {
-      let total = num[i] + num[left] + num[right];
-      if (total === 0) {
-        result.push([num[i], num[left], num[right]]);
+        let l = i+1
+        let r = nums.length -1
 
-        left++;
-        right--;
-
-        while (num[left] === num[left - 1]) {
-          left++;
+        // 去重操作
+        if(i !== 0 && nums[i] === nums[i-1]){
+            continue;
         }
 
-        while (num[right] === num[right + 1]) {
-          right--;
+        while(l < r){
+            let sum = nums[i] + nums[l] + nums[r]
+            if(sum === 0){
+                res.push([nums[i], nums[l] , nums[r]])
+                l++
+                r--
+
+
+                // 去重操作
+                while(nums[l] === nums[l-1]){
+                    l++
+                }
+
+                while(nums[r] === nums[r+1]){
+                    r--
+                }
+            }
+
+            if(sum<0){
+                l++
+            }
+
+            if(sum>0){
+                r--
+            }
         }
-      }
-
-      if (total < 0) {
-        left++;
-      }
-
-      if (total > 0) {
-        right--;
-      }
     }
-  }
-  return result;
-}
+
+    return res
+};
