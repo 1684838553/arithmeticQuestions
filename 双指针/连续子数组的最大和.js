@@ -18,12 +18,22 @@
 */
 // 求连续子数组的最大和
 function FindGreatestSum(array) {
-  // write code here
-  let max = array[0];
-  for (let i = 1; i < array.length; i++) {
-    array[i] += Math.max(array[i - 1], 0);
-    max = Math.max(array[i], max);
-  }
-
-  return max;
+	// write code here
+	let max = array[0];
+	for (let i = 1; i < array.length; i++) {
+	  array[i] += Math.max(array[i - 1], 0);
+	  max = Math.max(array[i], max);
+	}
+  
+	return max;
 }
+
+/**
+ * 题解：直接在 连续数组最大和 题解结果中改造，增加left，right变量记录子数组左右序号即可，那么问题就转化成了，如何更新left，right变量。
+ * 
+ * 1. 对于right，很明显当需要更新maxSumVal时就需要更新最大子数组的右边界，同时新增lastLeft记录当前left位置；
+ * 
+ * 2. 对于left，当resList[i-1] < 0 时，我们会重新计算子数组的连续和，因此这里也是更新left变量时机；
+ * 
+ * 3. 最后，根据left，right截取子数组空间时，要注意，按照我们的left，right更新方法，left可能会大于right，此时令left=lastLeft即可；
+*/
