@@ -3,3 +3,5 @@
 [JavaScript 数据结构与算法](https://www.cnblogs.com/AhuntSun-blog/p/12636718.html)
 
 [数据结构-bilibili](https://www.bilibili.com/video/BV1x7411L7Q7?p=23&spm_id_from=333.1007.top_right_bar_window_history.content.click)
+
+[算法解析](https://xiaochen1024.com/series/6196129fc1553b002e57bef5)
