@@ -5,3 +5,5 @@
 [数据结构-bilibili](https://www.bilibili.com/video/BV1x7411L7Q7?p=23&spm_id_from=333.1007.top_right_bar_window_history.content.click)
 
 [算法解析](https://xiaochen1024.com/series/6196129fc1553b002e57bef5)
+
+485  1598  819 234 706  617  1004   227  21  1614  1221  1030   1137  783 
