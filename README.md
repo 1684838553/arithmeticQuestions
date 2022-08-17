@@ -14,10 +14,10 @@
 3. 819 
 4. 234 
 5. [706](https://leetcode.cn/problems/design-hashmap/)  
-6. 617  
+6. [617](https://leetcode.cn/problems/merge-two-binary-trees/)  
 7. 1004   
 8. 227  
-9. 21  
+9. [21](https://leetcode.cn/problems/merge-two-sorted-lists/)  
 10. 1614  
 11. 1221  
 12. 1030   
