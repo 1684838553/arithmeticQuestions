@@ -9,11 +9,11 @@
 
 ## 考试题（力扣）
 
-1. 485  
-2. 1598  
+1. [485](https://leetcode.cn/problems/max-consecutive-ones/)  
+2. [1598](https://leetcode.cn/problems/crawler-log-folder/) 
 3. 819 
 4. 234 
-5. 706  
+5. [706](https://leetcode.cn/problems/design-hashmap/)  
 6. 617  
 7. 1004   
 8. 227  
