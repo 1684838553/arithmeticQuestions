@@ -9,17 +9,4 @@
 
 ## 考试题（力扣）
 
-1. [485](https://leetcode.cn/problems/max-consecutive-ones/)  
-2. [1598](https://leetcode.cn/problems/crawler-log-folder/) 
-3. 819 
-4. 234 
-5. [706](https://leetcode.cn/problems/design-hashmap/)  
-6. [617](https://leetcode.cn/problems/merge-two-binary-trees/)  
-7. 1004   
-8. 227  
-9. [21](https://leetcode.cn/problems/merge-two-sorted-lists/)  
-10. 1614  
-11. 1221  
-12. 1030   
-13. 1137  
-14. 783 
+20 144 933 237 206 2 83 141 349 1 3 76 104 111 102 94 11265 417 133 215 347 23
