@@ -12,3 +12,16 @@ var minNumber = function (nums) {
 
   return nums.join("");
 };
+
+function Fn(arr) {
+  let i = 0;
+  while (true) {
+    // arr[i] 就是要获取的值
+    console.log(arr[i]);
+    if (i < arr.length - 1) {
+      i++;
+    } else {
+      i = 0;
+    }
+  }
+}
