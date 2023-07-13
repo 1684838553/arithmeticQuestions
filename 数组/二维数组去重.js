@@ -12,7 +12,7 @@ function getUnique(arr) {
     obj[key] = item;
   });
 
-  console.log(Object.values(obj), obj);
+  return Object.values(obj);
 }
 
 getUnique(aa);
